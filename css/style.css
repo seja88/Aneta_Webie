@@ -1,0 +1,21 @@
+/* Colors Palette used in the provided design:
+
+Green: #54be90
+White: #ffffff
+Light grey: #ebebeb
+Text grey: #444444
+Dark grey: #232323
+Font (or you can use some other, choice is yours!):
+
+Alegreya Sans, in regular, bold and extra-bold style */
+/* font-family: 'Alegreya Sans', sans-serif; */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
