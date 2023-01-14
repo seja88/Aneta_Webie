@@ -8,14 +8,144 @@ Dark grey: #232323
 Font (or you can use some other, choice is yours!):
 
 Alegreya Sans, in regular, bold and extra-bold style */
-/* font-family: 'Alegreya Sans', sans-serif; */
+/*font-family: 'Alegreya Sans', sans-serif; */
 
 html {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+}
+
+.main {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #ffffff;
+    font-family: 'Alegreya Sans', sans-serif;
+
+}
+
+.nav-bar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar__logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-bar__menu {
+   width: 100%;
+   height: 100%;
+   background: #232323;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+}
+ 
+.nav-bar__links {
+    display: block;
+    text-decoration: none; 
+ 
+}
+
+.nav-bar__links a {
+    font-size: 2rem;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 34px 79px;  
+
+}
+
+.nav-bar__menu > li a:hover {
+    background: #54be90;
+    color: #232323;
+}
+
+.nav-bar:hover {
+    background: #54be90;
+    color: #232323;
+}
+
+.blank {
+    width: 100%;
+    height: 75px;
+    background: #ffffff;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.home img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(40%);
+    object-fit: cover;
+    position: absolute;
+}
+
+.home__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.home__text h1 {
+    font-size: 3rem;   
+}
+
+.home__text h2 {
+    font-size: 2rem;
+}
+
+.home__text span {
+    color: #54be90;
+    font-weight: 700;
+    text-decoration: underline #ffffff;
+}
+
+.info { 
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+
+}
+
+.info p {
+    font-size: 1.5rem;
+    color: #232323;
+    padding: 40px;
+}
+
+.info p > span {
+    color: #232323;
+    font-weight: bold;
+}
+
+.description {
+    
 }
